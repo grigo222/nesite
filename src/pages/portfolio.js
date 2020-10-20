@@ -2544,6 +2544,7 @@ export default (() => {
 						lg-font="400 16px --fontFamily-googleFiraSansCondensed"
 						lg-width="90%"
 						sm-font="400 14px --fontFamily-googleFiraSansCondensed"
+						sm-display="none"
 					>
 						© 2015 - 2020 | Все права защищены, фирма зарегистрирована на территории Казахстана и выполняет заказы по всему миру{"\n\t\t\t\t\t\n            "}
 					</Text>

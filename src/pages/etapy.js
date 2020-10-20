@@ -1012,9 +1012,11 @@ export default (() => {
 				border-color="#0082ff"
 				border-style="none"
 				margin="0px 0px 0p 0px"
+				sm-display="none"
+				lg-display="none"
 			/>
 			<StackItem width="100%">
-				<Override slot="StackItemContent" justify-content="center" />
+				<Override slot="StackItemContent" justify-content="center" lg-margin="0 0 30px 0" />
 				<Text
 					font="700 20px --fontFamily-googleJura"
 					text-align="center"
@@ -1023,6 +1025,7 @@ export default (() => {
 					margin="50px 1 0 1"
 					lg-font="700 18px --fontFamily-googleJura"
 					md-font="700 16px --fontFamily-googleJura"
+					sm-margin="20px 0px 0px 0px"
 				>
 					Если у вас остались сомнения, то посмотрите наши работы в разделе "
 					<Link
@@ -1048,8 +1051,10 @@ export default (() => {
 				border-color="#0082ff"
 				border-style="none"
 				border-width="1px 0 0 0"
+				sm-display="none"
+				lg-display="none"
 			/>
-			<StackItem margin="10px 0px 10px 0px">
+			<StackItem margin="10px 0px 10px 0px" sm-margin="40px 0px 10px 0px">
 				<Override
 					slot="StackItemContent"
 					justify-content="space-evenly"
@@ -1193,6 +1198,7 @@ export default (() => {
 						lg-font="400 16px --fontFamily-googleFiraSansCondensed"
 						lg-width="90%"
 						sm-font="400 14px --fontFamily-googleFiraSansCondensed"
+						sm-display="none"
 					>
 						© 2015 - 2020 | Все права защищены, фирма зарегистрирована на территории Казахстана и выполняет заказы по всему миру{"\n\t\t\t\t\t\n            "}
 					</Text>

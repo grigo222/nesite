@@ -1117,7 +1117,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#1C2049 0,#2C3485 100%) !important" padding="30px 0 10px 0">
-			<Override slot="SectionContent" width="100%" justify-content="center" />
+			<Override slot="SectionContent" width="100%" justify-content="center" sm-align-items="center" />
 			<Text
 				font="700 44px --fontFamily-googleJura"
 				text-align="center"
@@ -1126,6 +1126,7 @@ export default (() => {
 				lg-font="700 40px --fontFamily-googleJura"
 				md-font="700 36px --fontFamily-googleJura"
 				sm-margin="30px 0 0px 0"
+				sm-width="95%"
 			>
 				Стоит ли заказывать у нас?{"\n\n"}
 			</Text>
@@ -1136,9 +1137,11 @@ export default (() => {
 				border-color="#0082ff"
 				border-style="none"
 				margin="0px 0px 0p 0px"
+				sm-display="none"
+				lg-display="none"
 			/>
 			<StackItem width="100%">
-				<Override slot="StackItemContent" justify-content="center" />
+				<Override slot="StackItemContent" justify-content="center" lg-margin="0 0 30px 0" />
 				<Text
 					font="700 20px --fontFamily-googleJura"
 					text-align="center"
@@ -1147,6 +1150,7 @@ export default (() => {
 					margin="50px 1 0 1"
 					lg-font="700 18px --fontFamily-googleJura"
 					md-font="700 16px --fontFamily-googleJura"
+					sm-margin="20px 0px 0px 0px"
 				>
 					Если у вас остались сомнения, то посмотрите наши работы в разделе "
 					<Link href="https://newsite.kz/portfolio_web_studii" color="#ffffff">
@@ -1161,8 +1165,10 @@ export default (() => {
 				border-color="#0082ff"
 				border-style="none"
 				border-width="1px 0 0 0"
+				sm-display="none"
+				lg-display="none"
 			/>
-			<StackItem margin="10px 0px 10px 0px">
+			<StackItem margin="10px 0px 10px 0px" sm-margin="40px 0px 10px 0px">
 				<Override
 					slot="StackItemContent"
 					justify-content="space-evenly"
@@ -1306,6 +1312,7 @@ export default (() => {
 						lg-font="400 16px --fontFamily-googleFiraSansCondensed"
 						lg-width="90%"
 						sm-font="400 14px --fontFamily-googleFiraSansCondensed"
+						sm-display="none"
 					>
 						© 2015 - 2020 | Все права защищены, фирма зарегистрирована на территории Казахстана и выполняет заказы по всему миру{"\n\t\t\t\t\t\n            \n\n"}
 					</Text>
