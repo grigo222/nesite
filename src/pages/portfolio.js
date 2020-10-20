@@ -229,7 +229,7 @@ export default (() => {
 				width="100%"
 				height="56px"
 				justify-content="center"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-width="50%"
 			/>
@@ -331,7 +331,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -440,6 +440,7 @@ export default (() => {
 				nout-align-items="center"
 				align-items="center"
 				justify-content="center"
+				max-width="1170px"
 			/>
 			<Text
 				font="700 52px --fontFamily-googleJura"
@@ -473,7 +474,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -637,7 +638,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -800,7 +801,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -1293,7 +1294,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -1456,7 +1457,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -1619,7 +1620,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -1782,7 +1783,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -1945,7 +1946,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -2112,7 +2113,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -2275,7 +2276,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -2445,6 +2446,7 @@ export default (() => {
 				justify-content="center"
 				flex-direction="column"
 				sm-align-items="center"
+				max-width="1170px"
 			/>
 			<Stack justify-content="center" sm-width="100%">
 				<StackItem width="100%" display="flex" height="50px" margin="20px 0px 0px 0px">

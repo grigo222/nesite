@@ -229,7 +229,7 @@ export default (() => {
 				width="100%"
 				height="56px"
 				justify-content="center"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-width="50%"
 			/>
@@ -338,7 +338,7 @@ export default (() => {
 			<Override
 				slot="SectionContent"
 				width="100%"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-justify-content="center"
 			/>
@@ -396,7 +396,7 @@ export default (() => {
 						md-font="normal 700 36px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 30px/1.5 --fontFamily-googleJura"
 					>
-						Вкусные акции на разработку сайта{"\n\n"}
+						Вкусные акции на разработку сайта
 					</Text>
 					<Text
 						font="normal 700 30px/1.5 --fontFamily-googleJura"
@@ -409,7 +409,7 @@ export default (() => {
 						md-font="normal 700 26px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 					>
-						В этом разделе у нас предоставлены интересные предложения на разработку вашего сайта, от 15% скидки до вечного хостинга для сайта{"\n\n"}
+						В этом разделе у нас предоставлены интересные предложения на разработку вашего сайта, от 15% скидки до вечного хостинга для сайта
 					</Text>
 				</StackItem>
 				<Image
@@ -424,7 +424,13 @@ export default (() => {
 			</StackItem>
 		</Section>
 		<Section background="#f2f2f2" padding="0 0 0 0">
-			<Override slot="SectionContent" width="100%" justify-content="center" md-width="80%" />
+			<Override
+				slot="SectionContent"
+				width="100%"
+				justify-content="center"
+				md-width="80%"
+				max-width="1170px"
+			/>
 			<Text
 				font="700 52px --fontFamily-googleJura"
 				text-align="center"
@@ -435,7 +441,7 @@ export default (() => {
 				text-shadow="1px 1px 2px #000"
 				margin="40px 0px 0px 0px"
 			>
-				1. Вечный хостинг для вашего сайта{"\n\t\t\n\t\n\n\n\n"}
+				1. Вечный хостинг для вашего сайта
 			</Text>
 			<Text
 				font="700 20px --fontFamily-googleJura"
@@ -444,7 +450,7 @@ export default (() => {
 				lg-font="700 20px --fontFamily-googleJura"
 				margin="10px 0px 40px 0px"
 			>
-				Получите безграничное пользование вашим сайтом сроком на 100 лет{"\n\t\t\t\t\t\n\n"}
+				Получите безграничное пользование вашим сайтом сроком на 100 лет
 			</Text>
 		</Section>
 		<Section background="#121212">
@@ -454,6 +460,7 @@ export default (() => {
 				lg-align-items="center"
 				nout-justify-content="center"
 				nout-align-items="center"
+				max-width="1170px"
 			/>
 			<Text
 				font="700 44px --fontFamily-googleJura"
@@ -465,7 +472,7 @@ export default (() => {
 				sm-width="90%"
 				md-width="90%"
 			>
-				Вечный хостинг в цифрах{"\n\n"}
+				Вечный хостинг в цифрах
 			</Text>
 			<Stack
 				lg-width="100%"
@@ -498,7 +505,7 @@ export default (() => {
 						color="#ffffff"
 						sm-width="60%"
 					>
-						42+{"\n\n"}
+						42+
 					</Text>
 					<Text
 						font="normal 300 16px/1.5 --fontFamily-googleJura"
@@ -508,7 +515,7 @@ export default (() => {
 						margin="-20px 0px 0px 0px"
 						sm-width="60%"
 					>
-						Разработанных нами сайта подключили вечный хостинг{"\n\n"}
+						Разработанных нами сайта подключили вечный хостинг
 					</Text>
 				</StackItem>
 				<StackItem width="5%" height="60%" md-height="30%" sm-display="none">
@@ -548,7 +555,7 @@ export default (() => {
 						color="#ffffff"
 						sm-width="60%"
 					>
-						7{"\n\n"}
+						7
 					</Text>
 					<Text
 						font="normal 300 16px/1.5 --fontFamily-googleJura"
@@ -558,7 +565,7 @@ export default (() => {
 						margin="-20px 0px 0px 0px"
 						sm-width="60%"
 					>
-						Клиентов подключили вечный хостинг к нескольким сайтам{"\n\n"}
+						Клиентов подключили вечный хостинг к нескольким сайтам
 					</Text>
 				</StackItem>
 				<StackItem width="5%" height="60%" md-display="none">
@@ -589,7 +596,7 @@ export default (() => {
 						color="#ffffff"
 						sm-width="60%"
 					>
-						99${"\n\n"}
+						99$
 					</Text>
 					<Text
 						font="normal 300 16px/1.5 --fontFamily-googleJura"
@@ -600,7 +607,7 @@ export default (() => {
 						md-width="40%"
 						sm-width="60%"
 					>
-						Стоимость вечного хостинга, для одного вашего сайта{"\n\n"}
+						Стоимость вечного хостинга, для одного вашего сайта
 					</Text>
 				</StackItem>
 				{"    "}
@@ -613,6 +620,7 @@ export default (() => {
 				justify-content="center"
 				md-width="80%"
 				align-items="center"
+				max-width="1170px"
 			/>
 			<Text
 				font="700 30px --fontFamily-googleJura"
@@ -624,7 +632,7 @@ export default (() => {
 				margin="40px 0px 0px 0px"
 				width="100%"
 			>
-				Подробнее о вечном хостинге{"\n\n"}
+				Подробнее о вечном хостинге
 			</Text>
 			<StackItem width="90%" margin="30px 0px 30px 0px">
 				<Override slot="StackItemContent" justify-content="center" flex-direction="column" align-items="center" />
@@ -640,7 +648,7 @@ export default (() => {
 					md-font="700 16px --fontFamily-googleJura"
 				>
 					Во-первых. Вы получаете возможность экономить на своем сайте приличную сумму денег. 
-В среднем ~50$ / год{"\n\n"}
+В среднем ~50$ / год
 				</Text>
 				<Text
 					font="700 20px --fontFamily-googleJura"
@@ -653,7 +661,7 @@ export default (() => {
 					lg-font="700 18px --fontFamily-googleJura"
 					md-font="700 16px --fontFamily-googleJura"
 				>
-					Во-вторых. Хостинг предоставляется в партнерстве с компанией uKit Group, которая оказывает услуги хостинга с 2005 года и у которых обслуживается уже более 3,5 млн. сайтов{"\n\n"}
+					Во-вторых. Хостинг предоставляется в партнерстве с компанией uKit Group, которая оказывает услуги хостинга с 2005 года и у которых обслуживается уже более 3,5 млн. сайтов
 				</Text>
 				<Text
 					font="700 20px --fontFamily-googleJura"
@@ -666,7 +674,7 @@ export default (() => {
 					lg-font="700 18px --fontFamily-googleJura"
 					md-font="700 16px --fontFamily-googleJura"
 				>
-					В-третьих. Ваш вечный хостинг можно будет перенести на новый сайт, если Вы смените сферу деятельности{"\n\n"}
+					В-третьих. Ваш вечный хостинг можно будет перенести на новый сайт, если Вы смените сферу деятельности
 				</Text>
 			</StackItem>
 			<StackItem margin="20px 2 40px 2" nout-width="90%" width="90%">
@@ -695,6 +703,7 @@ export default (() => {
 				justify-content="center"
 				md-width="90%"
 				align-items="center"
+				max-width="1170px"
 			/>
 			<Text
 				font="700 44px --fontFamily-googleJura"
@@ -707,7 +716,7 @@ export default (() => {
 				width="90%"
 				sm-font="700 30px --fontFamily-googleJura"
 			>
-				2. Брифинг на разработку{"\n\n"}
+				2. Брифинг на разработку
 			</Text>
 			<Text
 				font="700 30px --fontFamily-googleJura"
@@ -719,7 +728,7 @@ export default (() => {
 				width="90%"
 				sm-font="700 20px --fontFamily-googleJura"
 			>
-				Заполните наш полный брифинг на разработку сайта и получить примерную стоимость вашего заказа и увеличьте скидку на 15%{"\n\n"}
+				Заполните наш полный брифинг на разработку сайта и получить примерную стоимость вашего заказа и увеличьте скидку на 15%
 			</Text>
 			<Text
 				font="700 17px --fontFamily-googleJura"
@@ -731,7 +740,7 @@ export default (() => {
 				width="90%"
 				margin="0 0 50px 0"
 			>
-				(заполнить бриф, вы можете процентов на 70%, чтобы получить скидку){"\n\n"}
+				(заполнить бриф, вы можете процентов на 70%, чтобы получить скидку)
 			</Text>
 			<StackItem margin="20px 2 40px 2" nout-width="90%" width="90%">
 				<Override slot="StackItemContent" justify-content="center" margin="0 0 30px 0" />
@@ -759,6 +768,7 @@ export default (() => {
 				justify-content="center"
 				sm-align-items="center"
 				md-align-items="center"
+				max-width="1170px"
 			/>
 			<Text
 				font="700 44px --fontFamily-googleJura"
@@ -773,16 +783,7 @@ export default (() => {
 			>
 				Стоит ли заказывать у нас?
 			</Text>
-			<Hr
-				width="100%"
-				height="0.75px"
-				background="#0072ff"
-				border-color="#0082ff"
-				border-style="none"
-				margin="0px 0px 0p 0px"
-				sm-display="none"
-				lg-display="none"
-			/>
+			<Image width="100%" src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_QQ0yItVx.png?v=2020-10-20T18:41:42.505Z" lg-display="none" />
 			<StackItem width="100%">
 				<Override slot="StackItemContent" justify-content="center" lg-margin="0 0 30px 0" />
 				<Text
@@ -813,15 +814,7 @@ export default (() => {
 					Также рекомендуем вам прочитать отзывы о нас в специальном разделе
 				</Text>
 			</StackItem>
-			<Hr
-				width="100%"
-				background="#0072ff"
-				border-color="#0082ff"
-				border-style="none"
-				border-width="1px 0 0 0"
-				sm-display="none"
-				lg-display="none"
-			/>
+			<Image width="100%" src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_QQ0yItVx.png?v=2020-10-20T18:41:42.505Z" lg-display="none" />
 			<StackItem margin="10px 0px 10px 0px" sm-margin="40px 0px 10px 0px" md-width="100%">
 				<Override
 					slot="StackItemContent"

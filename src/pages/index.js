@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Icon, Link, Image, Button, Text, Box, Hr } from "@quarkly/widgets";
+import { Theme, Icon, Link, Image, Button, Text, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, StackItem, Stack, Section, Menu } from "@quarkly/components";
 import * as Components from "components";
@@ -229,7 +229,7 @@ export default (() => {
 				width="100%"
 				height="56px"
 				justify-content="center"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-width="50%"
 			/>
@@ -327,8 +327,8 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section padding="100px 0 100px 0" background="url(https://newsite.kz/uploads/s/k/h/k/khkzeuuy5gmd/img/full_l4LKyAUb.png) center center/cover scroll">
-			<Override slot="SectionContent" width="100%" max-width="none" align-items="center" />
+		<Section background="url(https://newsite.kz/uploads/s/k/h/k/khkzeuuy5gmd/img/full_l4LKyAUb.png) center center/cover fixed">
+			<Override slot="SectionContent" width="100%" max-width="1170px" align-items="center" />
 			<Section padding="0 0 0 0">
 				<Override
 					slot="SectionContent"
@@ -341,11 +341,10 @@ export default (() => {
 				<Section
 					align-items="center"
 					justify-content="center"
-					padding="90px 0 24px 0"
 					nout-width="100%"
 					nout-justify-content="center"
 					lg-padding="250px 0 24px 0"
-					margin="50px 0 0 0"
+					margin="180px 0 0 0"
 					sm-margin="0px 0 0 0"
 					sm-padding="0px 0 0px 0"
 				>
@@ -389,7 +388,7 @@ export default (() => {
 					border-radius="50px"
 					font="normal 600 16px/1 --fontFamily-googleJura"
 					text-transform="uppercase"
-					margin="50px"
+					margin="50px 0px 40px 0px"
 					background="linear-gradient(90deg,#2F9DB4 0,#3AB7B8 37.47%,#76DBC7 100%) !important"
 					hover-box-shadow="0 0 15px 0 #22a5ff"
 					sm-width="90%"
@@ -399,14 +398,14 @@ export default (() => {
 				</Button>
 			</Section>
 		</Section>
-		<Section lg-justify-content="center" padding="0 0 0 0" margin="50px 0 50px 0">
-			<Override slot="SectionContent" width="100%" lg-align-items="center" />
+		<Section lg-justify-content="center" padding="0 0 0 0" margin="0px 0 0px 0">
+			<Override slot="SectionContent" width="100%" lg-align-items="center" max-width="1170px" />
 			<Text
 				font="700 52px --fontFamily-googleJura"
 				text-align="center"
 				text-shadow="1px 1px 2px #000000"
 				color="#121212"
-				margin="30px 0 30px 0"
+				margin="40px 0 30px 0"
 				lg-font="700 46px --fontFamily-googleJura"
 				md-font="700 40px --fontFamily-googleJura"
 				sm-font="700 36px --fontFamily-googleJura"
@@ -481,6 +480,7 @@ export default (() => {
 									sm-width="100%"
 									sm-font="normal 300 12px/1.5 --fontFamily-googleRoboto"
 									sm-padding="5px 5px 5px 5px"
+									background="#3C4C9E"
 								>
 									подробнее
 								</Button>
@@ -554,6 +554,7 @@ export default (() => {
 									sm-width="100%"
 									sm-font="normal 300 12px/1.5 --fontFamily-googleRoboto"
 									sm-padding="0 5px 0 5px"
+									background="#3C4C9E"
 								>
 									Подробнее
 								</Button>
@@ -627,6 +628,7 @@ export default (() => {
 									sm-width="100%"
 									sm-font="normal 300 12px/1.5 --fontFamily-googleRoboto"
 									sm-padding="0 5px 0 5px"
+									background="#3C4C9E"
 								>
 									Подробнее
 								</Button>
@@ -700,6 +702,7 @@ export default (() => {
 									sm-width="100%"
 									sm-font="normal 300 12px/1.5 --fontFamily-googleRoboto"
 									sm-padding="0 5px 0 5px"
+									background="#3C4C9E"
 								>
 									Подробнее
 								</Button>
@@ -719,6 +722,7 @@ export default (() => {
 				width="100%"
 				lg-align-items="center"
 				nout-align-items="center"
+				max-width="1170px"
 			/>
 			<Text
 				font="600 32px --fontFamily-googleJura"
@@ -882,7 +886,13 @@ export default (() => {
 			</StackItem>
 		</Section>
 		<Section background="#f2f2f2" padding="0 0 0 0">
-			<Override slot="SectionContent" width="100%" justify-content="center" md-width="80%" />
+			<Override
+				slot="SectionContent"
+				width="100%"
+				justify-content="center"
+				md-width="80%"
+				max-width="1170px"
+			/>
 			<Text
 				font="700 52px --fontFamily-googleJura"
 				text-align="center"
@@ -945,7 +955,7 @@ export default (() => {
 					font="normal 600 16px/1.5 --fontFamily-googleJura"
 					border-radius="50px"
 					background="linear-gradient(90deg,#2F9DB4 0,#3AB7B8 37.47%,#76DBC7 100%) !important"
-					margin="0 0 20px 0"
+					margin="0 0 10px 0"
 					hover-box-shadow="0 0 15px 0 #22a5ff"
 					sm-width="230px"
 					sm-height="50px"
@@ -956,7 +966,13 @@ export default (() => {
 			</StackItem>
 		</Section>
 		<Section background="#ffffff">
-			<Override slot="SectionContent" width="100%" flex-direction="row" justify-content="center" />
+			<Override
+				slot="SectionContent"
+				width="100%"
+				flex-direction="row"
+				justify-content="center"
+				max-width="1170px"
+			/>
 			<Stack width="100%" nout-justify-content="center">
 				<StackItem width="90%" display="flex">
 					<Override slot="StackItemContent" justify-content="flex-start" flex-direction="column" sm-align-items="center" />
@@ -1001,7 +1017,13 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section background="url(https://newsite.kz/__scale/uploads/s/k/h/k/khkzeuuy5gmd/img/full_lY4FDxYQ.png?quality=60&width=1500&webp=1) top center scroll" padding="0 0 0 0">
-			<Override slot="SectionContent" width="100%" flex-direction="row" justify-content="center" />
+			<Override
+				slot="SectionContent"
+				width="100%"
+				flex-direction="row"
+				justify-content="center"
+				max-width="1170px"
+			/>
 			<Stack
 				width="100%"
 				gap="0px"
@@ -1117,7 +1139,13 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#1C2049 0,#2C3485 100%) !important" padding="30px 0 10px 0">
-			<Override slot="SectionContent" width="100%" justify-content="center" sm-align-items="center" />
+			<Override
+				slot="SectionContent"
+				width="100%"
+				justify-content="center"
+				sm-align-items="center"
+				max-width="1170px"
+			/>
 			<Text
 				font="700 44px --fontFamily-googleJura"
 				text-align="center"
@@ -1130,16 +1158,7 @@ export default (() => {
 			>
 				Стоит ли заказывать у нас?{"\n\n"}
 			</Text>
-			<Hr
-				width="100%"
-				height="0.75px"
-				background="#0072ff"
-				border-color="#0082ff"
-				border-style="none"
-				margin="0px 0px 0p 0px"
-				sm-display="none"
-				lg-display="none"
-			/>
+			<Image width="100%" src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_QQ0yItVx.png?v=2020-10-20T18:41:42.505Z" lg-display="none" />
 			<StackItem width="100%">
 				<Override slot="StackItemContent" justify-content="center" lg-margin="0 0 30px 0" />
 				<Text
@@ -1159,15 +1178,7 @@ export default (() => {
 					", так как портфолио это зеркало Web-студии и если вам там понравятся наши работы, то наверняка вам и понравится наш разработанный сайт для вас.{"\n\t\t\t\t\t\n\n"}
 				</Text>
 			</StackItem>
-			<Hr
-				width="100%"
-				background="#0072ff"
-				border-color="#0082ff"
-				border-style="none"
-				border-width="1px 0 0 0"
-				sm-display="none"
-				lg-display="none"
-			/>
+			<Image width="100%" src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_QQ0yItVx.png?v=2020-10-20T18:41:42.505Z" lg-display="none" />
 			<StackItem margin="10px 0px 10px 0px" sm-margin="40px 0px 10px 0px">
 				<Override
 					slot="StackItemContent"
@@ -1213,6 +1224,7 @@ export default (() => {
 				justify-content="center"
 				flex-direction="column"
 				sm-align-items="center"
+				max-width="1170px"
 			/>
 			<Stack justify-content="center" sm-width="100%">
 				<StackItem width="100%" display="flex" height="50px" margin="20px 0px 0px 0px">

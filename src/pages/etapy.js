@@ -229,7 +229,7 @@ export default (() => {
 				width="100%"
 				height="56px"
 				justify-content="center"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-width="50%"
 			/>
@@ -328,8 +328,8 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section padding="100px 0 0px 0" background="url(https://newsite.kz/__scale/uploads/s/k/h/k/khkzeuuy5gmd/img/full_Sz6scQGR.png?quality=60&width=1500&webp=1) center center/cover fixed">
-			<Override slot="SectionContent" width="100%" max-width="none" align-items="center" />
-			<Stack width="90%" lg-flex-direction="column">
+			<Override slot="SectionContent" width="100%" max-width="1170px" align-items="center" />
+			<Stack width="100%" lg-flex-direction="column">
 				{"    "}
 				<StackItem width="50%" display="flex" lg-width="100%">
 					<Override slot="StackItemContent" width="90%" lg-align-items="center" lg-justify-content="center" />
@@ -345,7 +345,7 @@ export default (() => {
 						sm-margin="0px 0px 50px 0px"
 					>
 						Этапы создания
-вашего сайта{"\n\n"}
+вашего сайта
 					</Text>
 					{"    "}
 				</StackItem>
@@ -365,7 +365,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section>
-			<Override slot="SectionContent" width="100%" lg-align-items="center" />
+			<Override slot="SectionContent" width="100%" lg-align-items="center" max-width="1170px" />
 			<Text
 				font="700 44px --fontFamily-googleJura"
 				text-align="center"
@@ -376,7 +376,7 @@ export default (() => {
 				sm-font="700 36px --fontFamily-googleJura"
 				lg-width="90%"
 			>
-				Здесь вы можете увидеть в каком порядке оказывается услуга по создания сайта{"\n\t\t\t\t\t\n\n"}
+				Здесь вы можете увидеть в каком порядке оказывается услуга по создания сайта
 			</Text>
 		</Section>
 		<Section background="#f7f7f7">
@@ -386,6 +386,7 @@ export default (() => {
 				lg-align-items="center"
 				nout-justify-content="center"
 				nout-align-items="center"
+				max-width="1170px"
 			/>
 			<Stack
 				lg-width="100%"
@@ -433,7 +434,7 @@ export default (() => {
 							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
-							Выбор необходимой услуги{"\n\n"}
+							Выбор необходимой услуги
 						</Text>
 					</StackItem>
 					<StackItem width="10%" display="flex" sm-width="100%" lg-display="none">
@@ -461,7 +462,7 @@ export default (() => {
 							width="100%"
 						/>
 						<Text font="normal 300 16px/1.5 --fontFamily-googleJura" text-align="left" width="95%">
-							Вы выбираете необходимую услугу из списка услуг нашей студии.{"\n\n"}
+							Вы выбираете необходимую услугу из списка услуг нашей студии.
 						</Text>
 					</StackItem>
 				</StackItem>
@@ -496,7 +497,7 @@ export default (() => {
 						<Text font="normal 300 16px/1.5 --fontFamily-googleJura" text-align="left" width="95%">
 							Вам необходимо будет оставить либо только ваши контактные данные в 
 специальной форме в меню "Заказать сайт", либо заполнить полный брифинг 
-на разработку сайта:{"\n\n"}
+на разработку сайта:
 						</Text>
 						<StackItem margin="0 0 20px 0" width="95%">
 							<Override slot="StackItemContent" sm-justify-content="center" />
@@ -549,7 +550,7 @@ export default (() => {
 							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
-							Вы заполняете анкету и оставляете заявку{"\n\n"}
+							Вы заполняете анкету и оставляете заявку
 						</Text>
 					</StackItem>
 				</StackItem>
@@ -589,7 +590,7 @@ export default (() => {
 							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
-							Мы связываемся с вами и обговариваем детали{"\n\n"}
+							Мы связываемся с вами и обговариваем детали
 						</Text>
 					</StackItem>
 					<StackItem width="10%" display="flex" sm-width="100%" lg-display="none">
@@ -620,7 +621,7 @@ export default (() => {
 							Мы связываемся с вами любым удобным для вас способом, будь то 
 мессенджеры (Whats'app, Telegram, Viber) или через социальные сети, 
 обговариваем детали работы и получаем от вас дополнительную информацию 
-для разработки сайта{"\n\n"}
+для разработки сайта
 						</Text>
 					</StackItem>
 				</StackItem>
@@ -655,7 +656,7 @@ export default (() => {
 							В течение 3-х рабочих дней предоставляем первоначальный дизайн вашего 
 сайта, вносим все правки, которые укажите вы и после этого начинаем 
 заполнять сайт вашей информацией (товарами, услугами, контактными 
-данными и прочее){"\n\n"}
+данными и прочее)
 						</Text>
 					</StackItem>
 					<StackItem width="10%" display="flex" sm-width="100%" lg-display="none">
@@ -691,7 +692,7 @@ export default (() => {
 							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
-							Приступаем к разработке макета{"\n\n"}
+							Приступаем к разработке макета
 						</Text>
 					</StackItem>
 				</StackItem>
@@ -731,7 +732,7 @@ export default (() => {
 							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
-							Получаем предоплату{"\n\n"}
+							Получаем предоплату
 						</Text>
 					</StackItem>
 					<StackItem width="10%" display="flex" sm-width="100%" lg-display="none">
@@ -759,7 +760,7 @@ export default (() => {
 							width="100%"
 						/>
 						<Text font="normal 300 16px/1.5 --fontFamily-googleJura" text-align="left" width="95%">
-							После согласования макета получаем предоплату в размере 20-30% от стоимости заказа.{"\n\t\t\t\t\n\t\t\t\n\n"}
+							После согласования макета получаем предоплату в размере 20-30% от стоимости заказа.
 						</Text>
 					</StackItem>
 				</StackItem>
@@ -793,7 +794,7 @@ export default (() => {
 						<Text font="normal 300 16px/1.5 --fontFamily-googleJura" text-align="left" width="95%">
 							Полностью заполняем сайт всей необходимой для вас информацией и вносим 
 последние изменения, которые согласовываем с вами, а также проверяем 
-работу сайта на различных устройствах{"\n\n"}
+работу сайта на различных устройствах
 						</Text>
 					</StackItem>
 					<StackItem width="10%" display="flex" sm-width="100%" lg-display="none">
@@ -829,7 +830,7 @@ export default (() => {
 							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
-							Финальный этап разработки{"\n\t\t\t\t\t\n\t\t\t\t\n\t\t\t\n\n"}
+							Финальный этап разработки
 						</Text>
 					</StackItem>
 				</StackItem>
@@ -869,7 +870,7 @@ export default (() => {
 							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
-							Прием заказа и передача сайта под Ваше управление{"\n\t\t\t\t\t\n\t\t\t\t\n\t\t\t\n\n"}
+							Прием заказа и передача сайта под Ваше управление
 						</Text>
 					</StackItem>
 					<StackItem width="10%" display="flex" sm-width="100%" lg-display="none">
@@ -899,7 +900,7 @@ export default (() => {
 						<Text font="normal 300 16px/1.5 --fontFamily-googleJura" text-align="left" width="95%">
 							Передаем все права пользования сайтом в ваш аккаунт, вместе с хостингом и
  доменом и обучаем Вас размещать какую-либо информацию на сайте (статьи,
- товары, услуги и т.п.){"\n\n"}
+ товары, услуги и т.п.)
 						</Text>
 					</StackItem>
 				</StackItem>
@@ -932,7 +933,7 @@ export default (() => {
 							sm-align-items="center"
 						/>
 						<Text font="normal 300 16px/1.5 --fontFamily-googleJura" text-align="left" width="95%">
-							Вы оплачиваете работу полностью и оставляете нам отзыв и рекомендуем наши услуги своим друзьям :){"\n\n"}
+							Вы оплачиваете работу полностью и оставляете нам отзыв и рекомендуем наши услуги своим друзьям :)
 						</Text>
 						<StackItem margin="0 0 20px 0" width="95%">
 							<Override slot="StackItemContent" sm-justify-content="center" />
@@ -985,7 +986,7 @@ export default (() => {
 							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
-							Вы оплачиваете и оставляете отзыв (по желанию){"\n\t\t\t\t\t\n\t\t\t\t\n\t\t\t\n\n"}
+							Вы оплачиваете и оставляете отзыв (по желанию)
 						</Text>
 					</StackItem>
 				</StackItem>
@@ -993,7 +994,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#FF7F62 0,#262af3 100%)" padding="30px 0 10px 0">
-			<Override slot="SectionContent" width="100%" justify-content="center" />
+			<Override slot="SectionContent" width="100%" justify-content="center" max-width="1170px" />
 			<Text
 				font="700 44px --fontFamily-googleJura"
 				text-align="center"
@@ -1005,16 +1006,7 @@ export default (() => {
 			>
 				Стоит ли заказывать у нас?
 			</Text>
-			<Hr
-				width="100%"
-				height="0.75px"
-				background="#0072ff"
-				border-color="#0082ff"
-				border-style="none"
-				margin="0px 0px 0p 0px"
-				sm-display="none"
-				lg-display="none"
-			/>
+			<Image width="100%" src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_QQ0yItVx.png?v=2020-10-20T18:41:42.505Z" lg-display="none" />
 			<StackItem width="100%">
 				<Override slot="StackItemContent" justify-content="center" lg-margin="0 0 30px 0" />
 				<Text
@@ -1045,15 +1037,7 @@ export default (() => {
 					Также рекомендуем вам прочитать отзывы о нас в специальном разделе
 				</Text>
 			</StackItem>
-			<Hr
-				width="100%"
-				background="#0072ff"
-				border-color="#0082ff"
-				border-style="none"
-				border-width="1px 0 0 0"
-				sm-display="none"
-				lg-display="none"
-			/>
+			<Image width="100%" src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_QQ0yItVx.png?v=2020-10-20T18:41:42.505Z" lg-display="none" />
 			<StackItem margin="10px 0px 10px 0px" sm-margin="40px 0px 10px 0px">
 				<Override
 					slot="StackItemContent"
@@ -1099,6 +1083,7 @@ export default (() => {
 				justify-content="center"
 				flex-direction="column"
 				sm-align-items="center"
+				max-width="1170px"
 			/>
 			<Stack justify-content="center" sm-width="100%">
 				<StackItem width="100%" display="flex" height="50px" margin="20px 0px 0px 0px">

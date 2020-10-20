@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Icon, Link, Image, Button, Text, Hr } from "@quarkly/widgets";
+import { Theme, Icon, Link, Image, Button, Text } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, StackItem, Stack, Section, Menu } from "@quarkly/components";
 import * as Components from "components";
@@ -229,7 +229,7 @@ export default (() => {
 				width="100%"
 				height="56px"
 				justify-content="center"
-				max-width="none"
+				max-width="1170px"
 				align-items="center"
 				sm-width="50%"
 			/>
@@ -328,10 +328,10 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section padding="100px 0 0px 0" background="url(https://newsite.kz/__scale/uploads/s/k/h/k/khkzeuuy5gmd/img/full_E5rpSbiV.png?quality=60&width=1500&webp=1) center center/cover fixed">
-			<Override slot="SectionContent" width="100%" max-width="none" align-items="center" />
-			<Stack width="90%" lg-flex-direction="column">
+			<Override slot="SectionContent" width="100%" max-width="1170px" align-items="center" />
+			<Stack width="100%" lg-flex-direction="column" max-width="1170px">
 				{"    "}
-				<StackItem width="50%" display="flex" lg-width="100%">
+				<StackItem width="55%" display="flex" lg-width="100%">
 					<Override slot="StackItemContent" width="90%" lg-align-items="center" lg-justify-content="center" />
 					{"        "}
 					<Text
@@ -350,7 +350,7 @@ export default (() => {
 					{"    "}
 				</StackItem>
 				{"    "}
-				<StackItem width="50%" display="flex" lg-width="100%">
+				<StackItem width="45%" display="flex" lg-width="100%">
 					<Override slot="StackItemContent" align-items="flex-end" />
 					{"        "}
 					<Image
@@ -365,7 +365,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section>
-			<Override slot="SectionContent" width="100%" lg-align-items="center" />
+			<Override slot="SectionContent" width="100%" lg-align-items="center" max-width="1170px" />
 			<Text
 				font="700 52px --fontFamily-googleJura"
 				text-align="center"
@@ -387,6 +387,7 @@ export default (() => {
 				justify-content="center"
 				lg-flex-direction="column"
 				lg-align-items="center"
+				width="100%"
 			>
 				{"    "}
 				<StackItem width="50%" display="flex" sm-width="100%" lg-width="70%">
@@ -477,6 +478,7 @@ export default (() => {
 				md-width="80%"
 				lg-align-items="center"
 				align-items="center"
+				max-width="1170px"
 			/>
 			<Text
 				font="700 52px --fontFamily-googleJura"
@@ -581,9 +583,10 @@ export default (() => {
 				flex-direction="column"
 				justify-content="center"
 				align-items="center"
+				max-width="1170px"
 			/>
 			<Text text-align="center" color="#1a1a1a" font="700 30px --fontFamily-googleJura" margin="80px 0px 0px 0px">
-				Команда{"\n\n"}
+				Команда
 			</Text>
 			<Text
 				text-align="center"
@@ -592,7 +595,7 @@ export default (() => {
 				width="90%"
 				max-width="750px"
 			>
-				В студии работают только профессионалы высшего качества — познакомьтесь с нашими ведущими специалистами.{"\n\n"}
+				В студии работают только профессионалы высшего качества — познакомьтесь с нашими ведущими специалистами.
 			</Text>
 			<Stack
 				width="100%"
@@ -649,7 +652,7 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							Иван Куричев{"\n\t\t\t\n\n"}
+							Иван Куричев
 						</Text>
 						<Text
 							text-align="left"
@@ -661,7 +664,7 @@ export default (() => {
 							CEO
 						</Text>
 						<Text text-align="left" font="300 14px --fontFamily-googleRoboto" color="#1a1a1a">
-							Основатель Web-студии, самостоятельно занимается разработкой и введением своих собственных дополнительных проектов{"\n\n"}
+							Основатель Web-студии, самостоятельно занимается разработкой и введением своих собственных дополнительных проектов
 						</Text>
 						{"            "}
 					</StackItem>
@@ -710,7 +713,7 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							Марк Аврелов{"\n\n"}
+							Марк Аврелов
 						</Text>
 						<Text
 							text-align="left"
@@ -719,10 +722,10 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							Главный дизайнер{"\n\n"}
+							Главный дизайнер
 						</Text>
 						<Text text-align="left" font="300 14px --fontFamily-googleRoboto" color="#1a1a1a">
-							В 2009 году закончил Женевский институт дизайна, проходил стажировку в таких ведущих компаниях, как Moder Art и InterDesign. Награжден премией The Creative Mind за проект оформления сайта отеля Two Doors. В работе предпочитает придерживаться минималистичного стиля{"\n\n"}
+							В 2009 году закончил Женевский институт дизайна, проходил стажировку в таких ведущих компаниях, как Moder Art и InterDesign. Награжден премией The Creative Mind за проект оформления сайта отеля Two Doors. В работе предпочитает придерживаться минималистичного стиля
 						</Text>
 						{"            "}
 					</StackItem>
@@ -771,7 +774,7 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							Ксения Гузий{"\n\n"}
+							Ксения Гузий
 						</Text>
 						<Text
 							text-align="left"
@@ -780,12 +783,12 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							SMM-Менеджер{"\n\n"}
+							SMM-Менеджер
 						</Text>
 						<Text text-align="left" font="300 14px --fontFamily-googleRoboto" color="#1a1a1a">
 							Ксения получила юридическое образование, однако не стала работать 
 по специальности, а занялась ведением и оформлением социальных сетей. 
-Прошла специальные курсы, работала в компании Furnifuture. Сейчас же именно она отвечает за оформление наших групп в социальных сетях{"\n\n"}
+Прошла специальные курсы, работала в компании Furnifuture. Сейчас же именно она отвечает за оформление наших групп в социальных сетях
 						</Text>
 						{"            "}
 					</StackItem>
@@ -834,7 +837,7 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							Александр Семенов{"\n\n"}
+							Александр Семенов
 						</Text>
 						<Text
 							text-align="left"
@@ -843,14 +846,14 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							Программист-верстальщик{"\n\n"}
+							Программист-верстальщик
 						</Text>
 						<Text text-align="left" font="300 14px --fontFamily-googleRoboto" color="#1a1a1a">
 							Получив классическое образование в сфере программирования, поехал 
 продолжать обучение в Москву. Вскоре попал на стажировку в международную
  компанию Austra по программе 
 для молодых талантов. Вернувшись, приступил к работе в компании NewSite.
- Ориентируется на классические приемы верстки.{"\n\n"}
+ Ориентируется на классические приемы верстки.
 						</Text>
 						{"            "}
 					</StackItem>
@@ -900,7 +903,7 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							Никита Половинко{"\n\n"}
+							Никита Половинко
 						</Text>
 						<Text
 							text-align="left"
@@ -909,7 +912,7 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							Дизайнер{"\n\n"}
+							Дизайнер
 						</Text>
 						<Text text-align="left" font="300 14px --fontFamily-googleRoboto" color="#1a1a1a">
 							Удачные логотипы, оригинальные лэндинги, уникальные шрифты, для него нет
@@ -918,7 +921,7 @@ export default (() => {
 дизайн для крупных маркетплейс проектов. Он знает, как должны выглядеть 
 страницы интернет-магазинов, чтобы клиент захотел покупать на сайте 
 больше или с легкостью доверил свои контактные данные 
-интернет-магазину.{" \n\n"}
+интернет-магазину.{" "}
 						</Text>
 						{"            "}
 					</StackItem>
@@ -967,7 +970,7 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							Екатерина Байдак{"\n\n"}
+							Екатерина Байдак
 						</Text>
 						<Text
 							text-align="left"
@@ -976,12 +979,12 @@ export default (() => {
 							width="90%"
 							max-width="750px"
 						>
-							SEO-Специалист{"\n\n"}
+							SEO-Специалист
 						</Text>
 						<Text text-align="left" font="300 14px --fontFamily-googleRoboto" color="#1a1a1a">
 							Один из ведущих специалистов в сфере продвижения сайтов, если вы нашли наш сайт, то это ее заслуга :)
 							<br />
-							Работает в NewSite уже 3 года. За это время зарекомендовала себя как отличный специалист.{"\n\n"}
+							Работает в NewSite уже 3 года. За это время зарекомендовала себя как отличный специалист.
 						</Text>
 						{"            "}
 					</StackItem>
@@ -991,7 +994,13 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#282bad 0,#6063FE 100%)" padding="30px 0 10px 0">
-			<Override slot="SectionContent" width="100%" justify-content="center" sm-display="flex" />
+			<Override
+				slot="SectionContent"
+				width="100%"
+				justify-content="center"
+				sm-display="flex"
+				max-width="1170px"
+			/>
 			<Text
 				font="700 44px --fontFamily-googleJura"
 				text-align="center"
@@ -1003,16 +1012,7 @@ export default (() => {
 			>
 				Стоит ли заказывать у нас?
 			</Text>
-			<Hr
-				width="100%"
-				height="0.75px"
-				background="#0072ff"
-				border-color="#0082ff"
-				border-style="none"
-				margin="0px 0px 0p 0px"
-				sm-display="none"
-				lg-display="none"
-			/>
+			<Image width="100%" src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_QQ0yItVx.png?v=2020-10-20T18:41:42.505Z" lg-display="none" />
 			<StackItem width="100%">
 				<Override slot="StackItemContent" justify-content="center" lg-margin="0 0 30px 0" />
 				<Text
@@ -1042,18 +1042,10 @@ export default (() => {
 					</Link>
 					", так как портфолио это зеркало Web-студии и если вам там понравятся наши работы, то наверняка вам и понравится наш разработанный сайт для вас.
 					<br />
-					Также рекомендуем вам прочитать отзывы о нас в специальном разделе{"\n\n"}
+					Также рекомендуем вам прочитать отзывы о нас в специальном разделе
 				</Text>
 			</StackItem>
-			<Hr
-				width="100%"
-				background="#0072ff"
-				border-color="#0082ff"
-				border-style="none"
-				border-width="1px 0 0 0"
-				sm-display="none"
-				lg-display="none"
-			/>
+			<Image width="100%" src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_QQ0yItVx.png?v=2020-10-20T18:41:42.505Z" lg-display="none" />
 			<StackItem margin="10px 0px 10px 0px" sm-margin="40px 0px 10px 0px">
 				<Override
 					slot="StackItemContent"
@@ -1099,6 +1091,7 @@ export default (() => {
 				justify-content="center"
 				flex-direction="column"
 				sm-align-items="center"
+				max-width="1170px"
 			/>
 			<Stack justify-content="center" sm-width="100%">
 				<StackItem width="100%" display="flex" height="50px" margin="20px 0px 0px 0px">
