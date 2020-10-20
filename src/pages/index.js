@@ -466,7 +466,7 @@ export default (() => {
 							<Text font="normal 300 14px/1.5 --fontFamily-googleRoboto" text-align="center">
 								Одностраничный яркий, оригинальный рекламный сайт, направленный на продвижение вашей персоны или какого либо определенного товара.
 							</Text>
-							<StackItem>
+							<StackItem sm-width="90%">
 								<Override slot="StackItemContent" sm-align-items="center" sm-justify-content="center" />
 								<Button
 									margin="0 0 30px 0"
@@ -539,7 +539,7 @@ export default (() => {
 							<Text font="normal 300 14px/1.5 --fontFamily-googleRoboto" text-align="center">
 								Вы получите презентабельный ресурс, формирующий репутацию компании и выгодно представляющий ее услуги.{"\n\n"}
 							</Text>
-							<StackItem>
+							<StackItem sm-width="90%">
 								<Override slot="StackItemContent" sm-justify-content="center" />
 								<Button
 									margin="0 0 30px 0"
@@ -612,7 +612,7 @@ export default (() => {
 							<Text font="normal 300 14px/1.5 --fontFamily-googleRoboto" text-align="center">
 								Вы получите презентабельный ресурс, формирующий репутацию компании и выгодно представляющий ее услуги.{"\n\n"}
 							</Text>
-							<StackItem>
+							<StackItem sm-width="90%">
 								<Override slot="StackItemContent" />
 								<Button
 									margin="0 0 30px 0"
@@ -685,7 +685,7 @@ export default (() => {
 							<Text font="normal 300 14px/1.5 --fontFamily-googleRoboto" text-align="center">
 								Вы получите презентабельный ресурс, формирующий репутацию компании и выгодно представляющий ее услуги.{"\n\n"}
 							</Text>
-							<StackItem>
+							<StackItem sm-width="90%">
 								<Override slot="StackItemContent" />
 								<Button
 									margin="0 0 30px 0"

@@ -753,7 +753,13 @@ export default (() => {
 			</StackItem>
 		</Section>
 		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#003b7d 0,#C51BAC 100%)" padding="30px 0 10px 0">
-			<Override slot="SectionContent" width="100%" justify-content="center" sm-align-items="center" />
+			<Override
+				slot="SectionContent"
+				width="100%"
+				justify-content="center"
+				sm-align-items="center"
+				md-align-items="center"
+			/>
 			<Text
 				font="700 44px --fontFamily-googleJura"
 				text-align="center"
@@ -763,6 +769,7 @@ export default (() => {
 				md-font="700 36px --fontFamily-googleJura"
 				sm-width="90%"
 				width="100%"
+				md-width="90%"
 			>
 				Стоит ли заказывать у нас?
 			</Text>
