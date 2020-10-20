@@ -391,7 +391,7 @@ export default (() => {
 				{"    "}
 				<StackItem width="50%" display="flex" sm-width="100%" lg-width="70%">
 					<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="center" />
-					<Image src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/852168b641b2f4f0cb1b3d5ab69c92e5.png?v=2020-10-18T21:33:28.888Z" />
+					<Image src="https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/852168b641b2f4f0cb1b3d5ab69c92e5.png?v=2020-10-18T21:33:28.888Z" sm-width="100%" />
 					{"            "}
 				</StackItem>
 				<StackItem
@@ -1086,8 +1086,14 @@ export default (() => {
 			</StackItem>
 		</Section>
 		<Section background="#000000">
-			<Override slot="SectionContent" width="100%" justify-content="center" flex-direction="column" />
-			<Stack justify-content="center">
+			<Override
+				slot="SectionContent"
+				width="100%"
+				justify-content="center"
+				flex-direction="column"
+				sm-align-items="center"
+			/>
+			<Stack justify-content="center" sm-width="100%">
 				<StackItem width="100%" display="flex" height="50px" margin="20px 0px 0px 0px">
 					<Override slot="StackItemContent" justify-content="center" align-items="center" />
 					{"        "}

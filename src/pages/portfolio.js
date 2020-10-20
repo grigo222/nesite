@@ -2439,8 +2439,14 @@ export default (() => {
 			</StackItem>
 		</Section>
 		<Section background="#000000">
-			<Override slot="SectionContent" width="100%" justify-content="center" flex-direction="column" />
-			<Stack justify-content="center">
+			<Override
+				slot="SectionContent"
+				width="100%"
+				justify-content="center"
+				flex-direction="column"
+				sm-align-items="center"
+			/>
+			<Stack justify-content="center" sm-width="100%">
 				<StackItem width="100%" display="flex" height="50px" margin="20px 0px 0px 0px">
 					<Override slot="StackItemContent" justify-content="center" align-items="center" />
 					{"        "}
