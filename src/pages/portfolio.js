@@ -28,9 +28,9 @@ export default (() => {
 			nout-top="0px"
 			lg-height="120px"
 			sm-bottom="6047.062352941177px"
-			sm-height="215px"
 			sm-top="0px"
 			sm-position="static"
+			sm-height="180px"
 		>
 			<Override
 				slot="SectionContent"
@@ -40,6 +40,9 @@ export default (() => {
 				align-items="center"
 				height="56px"
 				nout-width="100%"
+				sm-min-width="16px"
+				sm-justify-content="flex-start"
+				sm-height="100%"
 			/>
 			<Stack width="100%" align-items="center" justify-content="center" lg-margin="5px 0px 0px 0px">
 				{"    "}
@@ -48,68 +51,99 @@ export default (() => {
 					display="flex"
 					height="50px"
 					lg-width="100%"
-					sm-height="150px"
+					sm-height="120px"
+					sm-margin="-20px 0px 0px 0px"
 				>
 					<Override
 						slot="StackItemContent"
 						align-items="center"
-						justify-content="left"
+						justify-content="flex-start"
 						lg-justify-content="center"
-						sm-flex-direction="column"
+						sm-flex-direction="row"
+						sm-flex-wrap="wrap"
+						sm-justify-content="center"
+						sm-align-items="center"
+						sm-height="90px"
 					/>
-					<Icon
-						category="md"
-						icon={MdPhone}
-						color="#ffffff"
-						width="16px"
-						height="16px"
-					/>
-					<Link
-						href="#tel:+7(775)259-06-69"
-						font="normal 400 16px --fontFamily-googleFiraSansCondensed"
-						color="#ffffff"
-						letter-spacing="1.5px"
-						text-decoration-line="initial"
-						link-color="#ffffff"
-						hover-color="#252b69"
-						margin="0 15px 0 5px"
-					>
-						+7(775)259-06-69
-					</Link>
-					<Icon
-						category="fa"
-						icon={FaSkype}
-						color="#ffffff"
-						font="icomoon"
-						width="16px"
-					/>
-					<Link
-						href="#tel:+7(775)259-06-69"
-						font="normal 400 16px --fontFamily-googleFiraSansCondensed"
-						color="#ffffff"
-						letter-spacing="1.5px"
-						text-decoration-line="initial"
-						link-color="#ffffff"
-						hover-color="#252b69"
-						text-transform="uppercase"
-						margin="0 15px 0 5px"
-					>
-						goalob
-					</Link>
-					<Icon category="md" icon={MdEmail} color="#ffffff" />
-					<Link
-						href="#tel:+7(775)259-06-69"
-						font="normal 400 16px --fontFamily-googleFiraSansCondensed"
-						color="#ffffff"
-						letter-spacing="1.5px"
-						text-decoration-line="initial"
-						link-color="#ffffff"
-						hover-color="#252b69"
-						text-transform="uppercase"
-						margin="0 15px 0 5px"
-					>
-						admin@newsite.kz
-					</Link>
+					<StackItem sm-width="140px" sm-margin="10px 0px 0px 0px">
+						<Override slot="StackItemContent" sm-align-items="center" sm-justify-content="space-evenly" sm-width="100%" />
+						<Icon
+							category="md"
+							icon={MdPhone}
+							color="#ffffff"
+							width="16px"
+							height="16px"
+						/>
+						<Link
+							href="#tel:+7(775)259-06-69"
+							font="normal 400 16px --fontFamily-googleFiraSansCondensed"
+							color="#ffffff"
+							letter-spacing="1.5px"
+							text-decoration-line="initial"
+							link-color="#ffffff"
+							hover-color="#252b69"
+							margin="0 15px 0 5px"
+							sm-margin="0 0 0 0"
+						>
+							+7(775)259-06-69
+						</Link>
+					</StackItem>
+					<StackItem sm-width="100px" sm-margin="10px 0px 0px 0px">
+						<Override
+							slot="StackItemContent"
+							sm-align-items="center"
+							sm-justify-content="space-evenly"
+							sm-width="100%"
+							align-items="center"
+							min-width="100%"
+						/>
+						<Icon
+							category="fa"
+							icon={FaSkype}
+							color="#ffffff"
+							font="icomoon"
+							width="16px"
+							height="16px"
+						/>
+						<Link
+							href="#tel:+7(775)259-06-69"
+							font="normal 400 16px --fontFamily-googleFiraSansCondensed"
+							color="#ffffff"
+							letter-spacing="1.5px"
+							text-decoration-line="initial"
+							link-color="#ffffff"
+							hover-color="#252b69"
+							text-transform="uppercase"
+							margin="0 15px 0 5px"
+							sm-margin="0 0 0 0"
+						>
+							goalob
+						</Link>
+					</StackItem>
+					<StackItem sm-margin="10px 0px 0px 0px" sm-width="190px">
+						<Override slot="StackItemContent" sm-align-items="center" sm-justify-content="space-evenly" align-items="center" />
+						<Icon
+							category="md"
+							icon={MdEmail}
+							color="#ffffff"
+							width="16px"
+							height="16px"
+						/>
+						<Link
+							href="#tel:+7(775)259-06-69"
+							font="normal 400 16px --fontFamily-googleFiraSansCondensed"
+							color="#ffffff"
+							letter-spacing="1.5px"
+							text-decoration-line="initial"
+							link-color="#ffffff"
+							hover-color="#252b69"
+							text-transform="uppercase"
+							margin="0 15px 0 5px"
+							sm-margin="0 0 0 0"
+						>
+							admin@newsite.kz
+						</Link>
+					</StackItem>
 					{"            "}
 				</StackItem>
 				<StackItem
@@ -118,8 +152,15 @@ export default (() => {
 					height="50px"
 					lg-width="100%"
 					lg-justify-content="center"
+					sm-align-items="center"
 				>
-					<Override slot="StackItemContent" justify-content="flex-end" align-items="center" lg-justify-content="center" />
+					<Override
+						slot="StackItemContent"
+						justify-content="flex-end"
+						align-items="center"
+						lg-justify-content="center"
+						sm-justify-content="center"
+					/>
 					{"        "}
 					<Icon
 						category="io"
@@ -128,8 +169,6 @@ export default (() => {
 						width="40px"
 						height="40px"
 						display="flex"
-						color="#ffffff"
-						hover-color="#000000"
 						border-radius="50px"
 						margin="0 5px 0 5px"
 						sm-min-width="40px"
@@ -140,6 +179,8 @@ export default (() => {
 						min-height="40px"
 						min-width="40px"
 						max-width="40px"
+						color="#ffffff"
+						hover-color="#000000"
 					/>
 					<Icon
 						category="io"
@@ -147,8 +188,6 @@ export default (() => {
 						width="40px"
 						height="40px"
 						display="flex"
-						color="#ffffff"
-						hover-color="#000000"
 						border-radius="50px"
 						margin="0 5px 0 5px"
 						background="#fac305 linear-gradient(90deg,#ec1282 0%,rgba(0,0,0,0) 100%,rgba(0,0,0,0) 100%,transparent 100%) 0 0 no-repeat"
@@ -160,6 +199,8 @@ export default (() => {
 						min-height="40px"
 						min-width="40px"
 						max-width="40px"
+						color="#ffffff"
+						hover-color="#000000"
 					/>
 					<Icon
 						category="fa"
@@ -168,8 +209,6 @@ export default (() => {
 						width="40px"
 						height="40px"
 						display="flex"
-						color="#ffffff"
-						hover-color="#000000"
 						border-radius="50px"
 						margin="0 5px 0 5px"
 						sm-max-height="40px"
@@ -180,6 +219,8 @@ export default (() => {
 						min-height="40px"
 						min-width="40px"
 						max-width="40px"
+						color="#ffffff"
+						hover-color="#000000"
 					/>
 					<Icon
 						category="fa"
@@ -188,8 +229,6 @@ export default (() => {
 						width="40px"
 						height="40px"
 						display="flex"
-						color="#ffffff"
-						hover-color="#000000"
 						border-radius="50px"
 						margin="0 5px 0 5px"
 						sm-max-height="40px"
@@ -201,6 +240,8 @@ export default (() => {
 						max-width="40px"
 						min-height="40px"
 						min-width="40px"
+						color="#ffffff"
+						hover-color="#000000"
 					/>
 					{"    "}
 				</StackItem>
@@ -231,7 +272,8 @@ export default (() => {
 				justify-content="center"
 				max-width="1170px"
 				align-items="center"
-				sm-width="50%"
+				sm-width="100%"
+				sm-min-width="16px"
 			/>
 			<Stack
 				width="90%"
@@ -290,7 +332,7 @@ export default (() => {
 						<Override slot="item-404" display="none" />
 						<Override
 							slot="link"
-							color="#707CB6 "
+							color="#000000"
 							text-decoration-line="initial"
 							hover-text-decoration-line="underline"
 							active-color="#ffffff"
@@ -395,7 +437,7 @@ export default (() => {
 						lg-font="normal 700 38px/1.5 --fontFamily-googleJura"
 						md-font="normal 700 36px/1.5 --fontFamily-googleJura"
 					>
-						Наше портфолио{"\n\n"}
+						Наше портфолио
 					</Text>
 					<Text
 						font="normal 700 30px/1.5 --fontFamily-googleJura"
@@ -408,7 +450,7 @@ export default (() => {
 						md-font="normal 700 26px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 					>
-						Если вам понравятся наши работы на этой странице,  то рекомендуем вам незамедлительно написать нам и мы для вас подготовим ни чуть не хуже дизайн вашего сайта, а может быть даже лучше, так как наш навык растет с каждой выполненой работой{"\n\n"}
+						Если вам понравятся наши работы на этой странице,  то рекомендуем вам незамедлительно написать нам и мы для вас подготовим ни чуть не хуже дизайн вашего сайта, а может быть даже лучше, так как наш навык растет с каждой выполненой работой
 					</Text>
 					<Button
 						width="440px"
@@ -454,7 +496,7 @@ export default (() => {
 				md-width="90%"
 				nout-width="90%"
 			>
-				Раздел с нашими выполненными работами{"\n\t\t\n\t\n\n\n\n"}
+				Раздел с нашими выполненными работами
 			</Text>
 			<Text
 				font="700 20px --fontFamily-googleJura"
@@ -467,7 +509,7 @@ export default (() => {
 				md-width="90%"
 				sm-margin="40px 0px 50px 0px"
 			>
-				В этом разделе вы можете увидеть наши работы разных тематик{"\n\t\t\t\t\t\n\n"}
+				В этом разделе вы можете увидеть наши работы разных тематик
 			</Text>
 		</Section>
 		<Section background="#126fcb" sm-align-items="center" sm-justify-content="center" padding="0 0 0 0">
@@ -525,7 +567,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Интернет-магазин MAD-style{"\n\n"}
+						Интернет-магазин MAD-style
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -537,7 +579,7 @@ export default (() => {
 						lg-font="normal 700 18px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 16px/1.5 --fontFamily-googleJura"
 					>
-						Интернет-магазин эксклюзивных акссесуаров, где художники сами вручную рисуют эскизы для своих товаров (кошельков, сумок и одежды){"\n\n"}
+						Интернет-магазин эксклюзивных акссесуаров, где художники сами вручную рисуют эскизы для своих товаров (кошельков, сумок и одежды)
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -552,7 +594,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 2 000{"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t"}
+								&gt; 2 000
 								<br />
 							</Text>
 							<Text
@@ -564,7 +606,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								товаров размещено на сайте{"\n\n"}
+								товаров размещено на сайте
 							</Text>
 							{"    "}
 						</StackItem>
@@ -579,7 +621,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 15{"\n\n"}
+								&gt; 15
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -590,7 +632,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								категорий товаров на сайте{"\n\n"}
+								категорий товаров на сайте
 							</Text>
 							{"    "}
 						</StackItem>
@@ -689,7 +731,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Онлайн кинотеатр Filmi{"\n\n"}
+						Онлайн кинотеатр Filmi
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -701,7 +743,7 @@ export default (() => {
 						lg-font="normal 700 18px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 16px/1.5 --fontFamily-googleJura"
 					>
-						Онлайн кинотеатр на котором находится большая база фильмов, сериалов и мультфильмов, которые возможно просматривать с любых устройств{"\n\n"}
+						Онлайн кинотеатр на котором находится большая база фильмов, сериалов и мультфильмов, которые возможно просматривать с любых устройств
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -716,7 +758,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 30 000{"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t"}
+								&gt; 30 000
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -727,7 +769,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								посетителей заходит на сайт ежемесячно{"\n\n"}
+								посетителей заходит на сайт ежемесячно
 							</Text>
 							{"    "}
 						</StackItem>
@@ -742,7 +784,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 150 000{"\n\n"}
+								&gt; 150 000
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -753,7 +795,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								страниц посещаются ежемесячно{"\n\n"}
+								страниц посещаются ежемесячно
 							</Text>
 							{"    "}
 						</StackItem>
@@ -852,7 +894,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Клуб пользователей uKit{"\n\n"}
+						Клуб пользователей uKit
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -864,7 +906,7 @@ export default (() => {
 						lg-font="normal 700 18px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 16px/1.5 --fontFamily-googleJura"
 					>
-						Самая большая площадка для пользователей визуального конструктора сайтов uKit, в котором имеется большое количество лайфхаков{"\n\n"}
+						Самая большая площадка для пользователей визуального конструктора сайтов uKit, в котором имеется большое количество лайфхаков
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -890,7 +932,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								решений было разработано{"\n\n"}
+								решений было разработано
 							</Text>
 							{"    "}
 						</StackItem>
@@ -905,7 +947,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 15{"\n\n"}
+								&gt; 15
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -916,7 +958,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								шаблонов продаются для uKit{"\n\n"}
+								шаблонов продаются для uKit
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1015,7 +1057,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Тур "Девичник" в Турции{"\n\n"}
+						Тур "Девичник" в Турции
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -1027,7 +1069,7 @@ export default (() => {
 						lg-font="normal 700 18px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 16px/1.5 --fontFamily-googleJura"
 					>
-						Программа тура "Девичника" в Турции, которая проходила летом 2019 года, тур был распланирован на каждый день по таймлайну{"\n\n"}
+						Программа тура "Девичника" в Турции, которая проходила летом 2019 года, тур был распланирован на каждый день по таймлайну
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -1042,7 +1084,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 1 100{"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t"}
+								&gt; 1 100
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -1053,7 +1095,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								посетителей зашло на сайт{"\n\n"}
+								посетителей зашло на сайт
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1068,7 +1110,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 3{"\n\n"}
+								&gt; 3
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -1079,7 +1121,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								тура провели за лето{"\n\n"}
+								тура провели за лето
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1178,7 +1220,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Шаблон для сайта автозапчастей{"\n\n"}
+						Шаблон для сайта автозапчастей
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -1194,7 +1236,6 @@ export default (() => {
 						<Link href="http://ukit.top/" color="#ffffff">
 							uKit.top
 						</Link>
-						{"\n\n"}
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -1220,7 +1261,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								установок этого шаблона на свои сайты{"\n\n"}
+								установок этого шаблона на свои сайты
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1235,7 +1276,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 16{"\n\n"}
+								&gt; 16
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -1246,7 +1287,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								кружек кофе выпито при разработке{"\n\n"}
+								кружек кофе выпито при разработке
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1345,7 +1386,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Старый дизайн сайта NewSite.kz{"\n\n"}
+						Старый дизайн сайта NewSite.kz
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -1357,7 +1398,7 @@ export default (() => {
 						lg-font="normal 700 18px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 16px/1.5 --fontFamily-googleJura"
 					>
-						Это старый дизайн нашей веб-студии, который ни чем не хуже нынешнего, но он нам настолько надоел, что мы решили сделать новый сайт.{"\n\n"}
+						Это старый дизайн нашей веб-студии, который ни чем не хуже нынешнего, но он нам настолько надоел, что мы решили сделать новый сайт.
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -1372,7 +1413,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 700{"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t"}
+								&gt; 700
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -1383,7 +1424,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								заявок мы получили с этого сайта{"\n\n"}
+								заявок мы получили с этого сайта
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1398,7 +1439,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 4{"\n\n"}
+								&gt; 4
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -1409,7 +1450,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								года просуществовал этот сайт{"\n\n"}
+								года просуществовал этот сайт
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1508,7 +1549,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Кинопортал Kinox{"\n\n"}
+						Кинопортал Kinox
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -1520,7 +1561,7 @@ export default (() => {
 						lg-font="normal 700 18px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 16px/1.5 --fontFamily-googleJura"
 					>
-						Онлайн кинопортал фильмов, сериалов и мультфильмов, где предоставлено более 20 000 материалов и страниц сайта{"\n\n"}
+						Онлайн кинопортал фильмов, сериалов и мультфильмов, где предоставлено более 20 000 материалов и страниц сайта
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -1535,7 +1576,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 300{"\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\t"}
+								&gt; 300
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -1546,7 +1587,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								категорий и жанров на сайте{"\n\n"}
+								категорий и жанров на сайте
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1561,7 +1602,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 500{"\n\n"}
+								&gt; 500
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -1572,7 +1613,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								персональных страниц актеров{"\n\n"}
+								персональных страниц актеров
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1671,7 +1712,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Show Makers{"\n\n"}
+						Show Makers
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -1683,7 +1724,7 @@ export default (() => {
 						lg-font="normal 700 18px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 16px/1.5 --fontFamily-googleJura"
 					>
-						Организация уникальных шоу-номеров для мероприятий по всей России и СНГ{"\n\n"}
+						Организация уникальных шоу-номеров для мероприятий по всей России и СНГ
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -1709,7 +1750,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								шоу было заказано через сайта{"\n\n"}
+								шоу было заказано через сайта
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1724,7 +1765,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 11{"\n\n"}
+								&gt; 11
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -1735,7 +1776,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								дней было потрачено на разработку сайта{"\n\n"}
+								дней было потрачено на разработку сайта
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1834,7 +1875,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						БКК ПРАВОВЕД{"\n\n"}
+						БКК ПРАВОВЕД
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -1846,7 +1887,7 @@ export default (() => {
 						lg-font="normal 700 18px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 16px/1.5 --fontFamily-googleJura"
 					>
-						Весь спектр юридических услуг и  консультации  в г.Электросталь по различным отраслям  права для граждан, военнослужащих.{"\n\n"}
+						Весь спектр юридических услуг и  консультации  в г.Электросталь по различным отраслям  права для граждан, военнослужащих.
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -1872,7 +1913,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								юридических услуг размещено на сайте{"\n\n"}
+								юридических услуг размещено на сайте
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1887,7 +1928,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 7{"\n\n"}
+								&gt; 7
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -1898,7 +1939,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								дней было потрачено на разработку сайта{"\n\n"}
+								дней было потрачено на разработку сайта
 							</Text>
 							{"    "}
 						</StackItem>
@@ -1997,7 +2038,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Шаблон для сайта стоматологии{"\n\n"}
+						Шаблон для сайта стоматологии
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -2013,7 +2054,6 @@ export default (() => {
 						<Link href="http://uKit.top" color="#000000">
 							uKit.top
 						</Link>
-						{"\n\n"}
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -2039,7 +2079,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								установок этого шаблона на свои сайты{"\n\n"}
+								установок этого шаблона на свои сайты
 							</Text>
 							{"    "}
 						</StackItem>
@@ -2054,7 +2094,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 17{"\n\n"}
+								&gt; 17
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -2065,7 +2105,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								кружек кофе выпито при разработке{"\n\n"}
+								кружек кофе выпито при разработке
 							</Text>
 							{"    "}
 						</StackItem>
@@ -2164,7 +2204,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Агенство недвижимости в Турции{"\n\n"}
+						Агенство недвижимости в Турции
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -2176,7 +2216,7 @@ export default (() => {
 						lg-font="normal 700 18px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 16px/1.5 --fontFamily-googleJura"
 					>
-						Онлайн агентство оказывающее широкий спектр услуг в сфере продажи недвижимости в Антальи, Стамбуле и Алании{"\n\n"}
+						Онлайн агентство оказывающее широкий спектр услуг в сфере продажи недвижимости в Антальи, Стамбуле и Алании
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -2202,7 +2242,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								объектов на продажу есть на сайте{"\n\n"}
+								объектов на продажу есть на сайте
 							</Text>
 							{"    "}
 						</StackItem>
@@ -2217,7 +2257,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 4{"\n\n"}
+								&gt; 4
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -2228,7 +2268,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								раза меняли цветовую схему для сайта{"\n\n"}
+								раза меняли цветовую схему для сайта
 							</Text>
 							{"    "}
 						</StackItem>
@@ -2327,7 +2367,7 @@ export default (() => {
 						lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 						sm-font="normal 700 24px/1.5 --fontFamily-googleJura"
 					>
-						Шаблон для доставки еды{"\n\n"}
+						Шаблон для доставки еды
 					</Text>
 					<Text
 						font="normal 700 20px/1.5 --fontFamily-googleJura"
@@ -2343,7 +2383,6 @@ export default (() => {
 						<Link href="http://ukit.top/" color="#ffffff">
 							uKit.top
 						</Link>
-						{"\n\n"}
 					</Text>
 					<Stack width="95%" lg-justify-content="center">
 						{"    "}
@@ -2369,7 +2408,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								установок этого шаблона на свои сайты{"\n\n"}
+								установок этого шаблона на свои сайты
 							</Text>
 							{"    "}
 						</StackItem>
@@ -2384,7 +2423,7 @@ export default (() => {
 								lg-font="normal 700 28px/1.5 --fontFamily-googleJura"
 								sm-font="normal 700 20px/1.5 --fontFamily-googleJura"
 							>
-								&gt; 8{"\n\n"}
+								&gt; 8
 							</Text>
 							<Text
 								font="normal 600 20px/1.5 --fontFamily-googleJura"
@@ -2395,7 +2434,7 @@ export default (() => {
 								lg-font="normal 600 18px/1.5 --fontFamily-googleJura"
 								sm-font="normal 600 15px/1.5 --fontFamily-googleJura"
 							>
-								кружек кофе выпито при разработке{"\n\n"}
+								кружек кофе выпито при разработке
 							</Text>
 							{"    "}
 						</StackItem>

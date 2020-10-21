@@ -28,9 +28,9 @@ export default (() => {
 			nout-top="0px"
 			lg-height="120px"
 			sm-bottom="6047.062352941177px"
-			sm-height="215px"
 			sm-top="0px"
 			sm-position="static"
+			sm-height="180px"
 		>
 			<Override
 				slot="SectionContent"
@@ -40,6 +40,9 @@ export default (() => {
 				align-items="center"
 				height="56px"
 				nout-width="100%"
+				sm-min-width="16px"
+				sm-justify-content="flex-start"
+				sm-height="100%"
 			/>
 			<Stack width="100%" align-items="center" justify-content="center" lg-margin="5px 0px 0px 0px">
 				{"    "}
@@ -48,68 +51,99 @@ export default (() => {
 					display="flex"
 					height="50px"
 					lg-width="100%"
-					sm-height="150px"
+					sm-height="120px"
+					sm-margin="-20px 0px 0px 0px"
 				>
 					<Override
 						slot="StackItemContent"
 						align-items="center"
-						justify-content="left"
+						justify-content="flex-start"
 						lg-justify-content="center"
-						sm-flex-direction="column"
+						sm-flex-direction="row"
+						sm-flex-wrap="wrap"
+						sm-justify-content="center"
+						sm-align-items="center"
+						sm-height="90px"
 					/>
-					<Icon
-						category="md"
-						icon={MdPhone}
-						color="#ffffff"
-						width="16px"
-						height="16px"
-					/>
-					<Link
-						href="#tel:+7(775)259-06-69"
-						font="normal 400 16px --fontFamily-googleFiraSansCondensed"
-						color="#ffffff"
-						letter-spacing="1.5px"
-						text-decoration-line="initial"
-						link-color="#ffffff"
-						hover-color="#252b69"
-						margin="0 15px 0 5px"
-					>
-						+7(775)259-06-69
-					</Link>
-					<Icon
-						category="fa"
-						icon={FaSkype}
-						color="#ffffff"
-						font="icomoon"
-						width="16px"
-					/>
-					<Link
-						href="#tel:+7(775)259-06-69"
-						font="normal 400 16px --fontFamily-googleFiraSansCondensed"
-						color="#ffffff"
-						letter-spacing="1.5px"
-						text-decoration-line="initial"
-						link-color="#ffffff"
-						hover-color="#252b69"
-						text-transform="uppercase"
-						margin="0 15px 0 5px"
-					>
-						goalob
-					</Link>
-					<Icon category="md" icon={MdEmail} color="#ffffff" />
-					<Link
-						href="#tel:+7(775)259-06-69"
-						font="normal 400 16px --fontFamily-googleFiraSansCondensed"
-						color="#ffffff"
-						letter-spacing="1.5px"
-						text-decoration-line="initial"
-						link-color="#ffffff"
-						hover-color="#252b69"
-						text-transform="uppercase"
-						margin="0 15px 0 5px"
-					>
-						admin@newsite.kz
-					</Link>
+					<StackItem sm-width="140px" sm-margin="10px 0px 0px 0px">
+						<Override slot="StackItemContent" sm-align-items="center" sm-justify-content="space-evenly" sm-width="100%" />
+						<Icon
+							category="md"
+							icon={MdPhone}
+							color="#ffffff"
+							width="16px"
+							height="16px"
+						/>
+						<Link
+							href="#tel:+7(775)259-06-69"
+							font="normal 400 16px --fontFamily-googleFiraSansCondensed"
+							color="#ffffff"
+							letter-spacing="1.5px"
+							text-decoration-line="initial"
+							link-color="#ffffff"
+							hover-color="#252b69"
+							margin="0 15px 0 5px"
+							sm-margin="0 0 0 0"
+						>
+							+7(775)259-06-69
+						</Link>
+					</StackItem>
+					<StackItem sm-width="100px" sm-margin="10px 0px 0px 0px">
+						<Override
+							slot="StackItemContent"
+							sm-align-items="center"
+							sm-justify-content="space-evenly"
+							sm-width="100%"
+							align-items="center"
+							min-width="100%"
+						/>
+						<Icon
+							category="fa"
+							icon={FaSkype}
+							color="#ffffff"
+							font="icomoon"
+							width="16px"
+							height="16px"
+						/>
+						<Link
+							href="#tel:+7(775)259-06-69"
+							font="normal 400 16px --fontFamily-googleFiraSansCondensed"
+							color="#ffffff"
+							letter-spacing="1.5px"
+							text-decoration-line="initial"
+							link-color="#ffffff"
+							hover-color="#252b69"
+							text-transform="uppercase"
+							margin="0 15px 0 5px"
+							sm-margin="0 0 0 0"
+						>
+							goalob
+						</Link>
+					</StackItem>
+					<StackItem sm-margin="10px 0px 0px 0px" sm-width="190px">
+						<Override slot="StackItemContent" sm-align-items="center" sm-justify-content="space-evenly" align-items="center" />
+						<Icon
+							category="md"
+							icon={MdEmail}
+							color="#ffffff"
+							width="16px"
+							height="16px"
+						/>
+						<Link
+							href="#tel:+7(775)259-06-69"
+							font="normal 400 16px --fontFamily-googleFiraSansCondensed"
+							color="#ffffff"
+							letter-spacing="1.5px"
+							text-decoration-line="initial"
+							link-color="#ffffff"
+							hover-color="#252b69"
+							text-transform="uppercase"
+							margin="0 15px 0 5px"
+							sm-margin="0 0 0 0"
+						>
+							admin@newsite.kz
+						</Link>
+					</StackItem>
 					{"            "}
 				</StackItem>
 				<StackItem
@@ -118,8 +152,15 @@ export default (() => {
 					height="50px"
 					lg-width="100%"
 					lg-justify-content="center"
+					sm-align-items="center"
 				>
-					<Override slot="StackItemContent" justify-content="flex-end" align-items="center" lg-justify-content="center" />
+					<Override
+						slot="StackItemContent"
+						justify-content="flex-end"
+						align-items="center"
+						lg-justify-content="center"
+						sm-justify-content="center"
+					/>
 					{"        "}
 					<Icon
 						category="io"
@@ -231,7 +272,8 @@ export default (() => {
 				justify-content="center"
 				max-width="1170px"
 				align-items="center"
-				sm-width="50%"
+				sm-width="100%"
+				sm-min-width="16px"
 			/>
 			<Stack
 				width="90%"
@@ -328,7 +370,13 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section background="url(https://newsite.kz/uploads/s/k/h/k/khkzeuuy5gmd/img/full_l4LKyAUb.png) center center/cover fixed">
-			<Override slot="SectionContent" width="100%" max-width="1170px" align-items="center" />
+			<Override
+				slot="SectionContent"
+				width="100%"
+				max-width="1170px"
+				align-items="center"
+				sm-min-width="16px"
+			/>
 			<Section padding="0 0 0 0">
 				<Override
 					slot="SectionContent"
@@ -337,17 +385,22 @@ export default (() => {
 					max-width="None"
 					justify-content="flex-end"
 					nout-width="100%"
+					min-width="16px"
 				/>
 				<Section
 					align-items="center"
 					justify-content="center"
 					nout-width="100%"
 					nout-justify-content="center"
-					lg-padding="250px 0 24px 0"
+					lg-padding="0px 0 0 0"
 					margin="180px 0 0 0"
 					sm-margin="0px 0 0 0"
 					sm-padding="0px 0 0px 0"
+					md-padding="0 0 0px 0"
+					md-margin="300px 0 0 0"
+					lg-margin="300px 0 0 0"
 				>
+					<Override slot="SectionContent" sm-min-width="200px" />
 					<Components.Stroka sm-width="10%" />
 					<Components.EmbedHTML
 						font="normal 600 47px/1.2 --fontFamily-googleJura"
@@ -355,6 +408,7 @@ export default (() => {
 						nout-font="normal 600 36px/1.2 --fontFamily-googleJura"
 						lg-font="normal 600 30px/1.2 --fontFamily-googleJura"
 						sm-font="normal 600 24px/1.2 --fontFamily-googleJura"
+						sm-width="100%"
 					/>
 				</Section>
 				<Text
@@ -398,6 +452,7 @@ export default (() => {
 				</Button>
 			</Section>
 		</Section>
+		<Section height="40px" background="url(https://newsite.kz/uploads/s/k/h/k/khkzeuuy5gmd/img/full_9FhcmrIv.png) 0 0/cover no-repeat fixed,url(https://newsite.kz/uploads/s/k/h/k/khkzeuuy5gmd/img/full_l4LKyAUb.png) center center/cover fixed" padding="0 0 0 0" lg-display="none" />
 		<Section lg-justify-content="center" padding="0 0 0 0" margin="0px 0 0px 0">
 			<Override slot="SectionContent" width="100%" lg-align-items="center" max-width="1170px" />
 			<Text
