@@ -208,7 +208,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section
-			background="rgba(197, 27, 172, 0.7)"
+			background="rgba(197, 27, 172, 0.9)"
 			position="fixed"
 			display="flex"
 			top="56px"
@@ -761,7 +761,7 @@ export default (() => {
 				</Button>
 			</StackItem>
 		</Section>
-		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#003b7d 0,#C51BAC 100%)" padding="30px 0 10px 0">
+		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#003b7d 0,#C51BAC 100%)" padding="0px 0 0px 0" height="100vh">
 			<Override
 				slot="SectionContent"
 				width="100%"

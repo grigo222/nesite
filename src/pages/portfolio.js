@@ -208,7 +208,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section
-			background="rgba(0, 7, 73, 0.7)"
+			background="rgba(0, 7, 73, 0.9)"
 			position="fixed"
 			display="flex"
 			top="56px"

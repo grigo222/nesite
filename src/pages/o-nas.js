@@ -208,7 +208,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section
-			background="rgba(96, 99, 254, 0.7)"
+			background="rgba(96, 99, 254, 0.9)"
 			position="fixed"
 			display="flex"
 			top="56px"
@@ -993,7 +993,7 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#282bad 0,#6063FE 100%)" padding="30px 0 10px 0">
+		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#282bad 0,#6063FE 100%)" height="100vh" padding="0 0 0 0">
 			<Override
 				slot="SectionContent"
 				width="100%"

@@ -128,8 +128,6 @@ export default (() => {
 						width="40px"
 						height="40px"
 						display="flex"
-						color="#ffffff"
-						hover-color="#000000"
 						border-radius="50px"
 						margin="0 5px 0 5px"
 						sm-min-width="40px"
@@ -140,6 +138,8 @@ export default (() => {
 						min-height="40px"
 						min-width="40px"
 						max-width="40px"
+						color="#ffffff"
+						hover-color="#000000"
 					/>
 					<Icon
 						category="io"
@@ -147,8 +147,6 @@ export default (() => {
 						width="40px"
 						height="40px"
 						display="flex"
-						color="#ffffff"
-						hover-color="#000000"
 						border-radius="50px"
 						margin="0 5px 0 5px"
 						background="#fac305 linear-gradient(90deg,#ec1282 0%,rgba(0,0,0,0) 100%,rgba(0,0,0,0) 100%,transparent 100%) 0 0 no-repeat"
@@ -160,6 +158,8 @@ export default (() => {
 						min-height="40px"
 						min-width="40px"
 						max-width="40px"
+						color="#ffffff"
+						hover-color="#000000"
 					/>
 					<Icon
 						category="fa"
@@ -168,8 +168,6 @@ export default (() => {
 						width="40px"
 						height="40px"
 						display="flex"
-						color="#ffffff"
-						hover-color="#000000"
 						border-radius="50px"
 						margin="0 5px 0 5px"
 						sm-max-height="40px"
@@ -180,6 +178,8 @@ export default (() => {
 						min-height="40px"
 						min-width="40px"
 						max-width="40px"
+						color="#ffffff"
+						hover-color="#000000"
 					/>
 					<Icon
 						category="fa"
@@ -188,8 +188,6 @@ export default (() => {
 						width="40px"
 						height="40px"
 						display="flex"
-						color="#ffffff"
-						hover-color="#000000"
 						border-radius="50px"
 						margin="0 5px 0 5px"
 						sm-max-height="40px"
@@ -201,6 +199,8 @@ export default (() => {
 						max-width="40px"
 						min-height="40px"
 						min-width="40px"
+						color="#ffffff"
+						hover-color="#000000"
 					/>
 					{"    "}
 				</StackItem>
@@ -208,7 +208,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section
-			background="rgba(47, 53, 115, 0.7)"
+			background="rgba(47, 53, 115, 0.9)"
 			position="fixed"
 			display="flex"
 			top="56px"
@@ -415,7 +415,13 @@ export default (() => {
 			</Text>
 			<Stack lg-width="100%" lg-justify-content="center" margin="0 0 30px 0" sm-flex-direction="column">
 				{"    "}
-				<StackItem width="50%" display="flex" sm-width="100%">
+				<StackItem
+					width="50%"
+					display="flex"
+					sm-width="100%"
+					hover-transform="translateY(-10px)"
+					hover-transition="all --transitionDuration-fast ease 0s"
+				>
 					<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="center" />
 					{"        "}
 					<StackItem width="95%">
@@ -481,6 +487,8 @@ export default (() => {
 									sm-font="normal 300 12px/1.5 --fontFamily-googleRoboto"
 									sm-padding="5px 5px 5px 5px"
 									background="#3C4C9E"
+									hover-transition="all --transitionDuration-fast ease 0s"
+									hover-transform="scale(110%)"
 								>
 									подробнее
 								</Button>
@@ -490,7 +498,13 @@ export default (() => {
 					</StackItem>
 					{"    "}
 				</StackItem>
-				<StackItem width="50%" display="flex" sm-width="100%">
+				<StackItem
+					width="50%"
+					display="flex"
+					sm-width="100%"
+					hover-transition="all --transitionDuration-fast ease 0s"
+					hover-transform="translateY(-10px)"
+				>
 					<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="center" />
 					{"        "}
 					<StackItem width="95%">
@@ -555,6 +569,8 @@ export default (() => {
 									sm-font="normal 300 12px/1.5 --fontFamily-googleRoboto"
 									sm-padding="0 5px 0 5px"
 									background="#3C4C9E"
+									hover-transform="scale(110%)"
+									hover-transition="all --transitionDuration-fast ease 0s"
 								>
 									Подробнее
 								</Button>
@@ -564,7 +580,13 @@ export default (() => {
 					</StackItem>
 					{"    "}
 				</StackItem>
-				<StackItem width="50%" display="flex" sm-width="100%">
+				<StackItem
+					width="50%"
+					display="flex"
+					sm-width="100%"
+					hover-transition="all --transitionDuration-fast ease 0s"
+					hover-transform="translateY(-10px)"
+				>
 					<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="center" />
 					{"        "}
 					<StackItem width="95%">
@@ -629,6 +651,8 @@ export default (() => {
 									sm-font="normal 300 12px/1.5 --fontFamily-googleRoboto"
 									sm-padding="0 5px 0 5px"
 									background="#3C4C9E"
+									hover-transform="scale(110%)"
+									hover-transition="all --transitionDuration-fast ease 0s"
 								>
 									Подробнее
 								</Button>
@@ -638,7 +662,13 @@ export default (() => {
 					</StackItem>
 					{"    "}
 				</StackItem>
-				<StackItem width="50%" display="flex" sm-width="100%">
+				<StackItem
+					width="50%"
+					display="flex"
+					sm-width="100%"
+					hover-transition="all --transitionDuration-fast ease 0s"
+					hover-transform="translateY(-10px)"
+				>
 					<Override slot="StackItemContent" flex-direction="column" align-items="center" justify-content="center" />
 					{"        "}
 					<StackItem width="95%">
@@ -703,6 +733,8 @@ export default (() => {
 									sm-font="normal 300 12px/1.5 --fontFamily-googleRoboto"
 									sm-padding="0 5px 0 5px"
 									background="#3C4C9E"
+									hover-transform="scale(110%)"
+									hover-transition="all --transitionDuration-fast ease 0s"
 								>
 									Подробнее
 								</Button>
@@ -1133,12 +1165,13 @@ export default (() => {
 						display="flex"
 						md-height="300px"
 						sm-width="100%"
+						object-position="50% 100%"
 					/>
 					{"        "}{"    "}
 				</StackItem>
 			</Stack>
 		</Section>
-		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#1C2049 0,#2C3485 100%) !important" padding="30px 0 10px 0">
+		<Section background="url(https://uploads.quarkly.io/5f82df518a25ab001e4e7775/images/full_cGxZspFm.png?v=2020-10-18T11:36:05.781Z) top center scroll,linear-gradient(315deg,#1C2049 0,#2C3485 100%) !important" padding="0px 0 0px 0" height="100vh">
 			<Override
 				slot="SectionContent"
 				width="100%"
