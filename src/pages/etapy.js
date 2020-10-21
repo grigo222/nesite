@@ -466,6 +466,9 @@ export default (() => {
 						box-shadow="0 3px 0 rgba(215, 228, 237, 0.72), 0px 16px 20px -1px rgba(215, 228, 237, 0.67)"
 						sm-margin="0 0px 0px 0px"
 						sm-width="80%"
+						transition="all --transitionDuration-fast ease 0s"
+						hover-transform="scale(110%)"
+						hover-transition="all --transitionDuration-fast ease 0s"
 					>
 						<Override
 							slot="StackItemContent"
@@ -479,7 +482,6 @@ export default (() => {
 							text-align="center"
 							text-transform="uppercase"
 							hover-color="#ff7b00"
-							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
 							Выбор необходимой услуги
@@ -514,9 +516,7 @@ export default (() => {
 						</Text>
 					</StackItem>
 				</StackItem>
-				<StackItem width="100%" margin="-70px 5px -120px 0px" lg-display="none">
-					<Hr width="3px" height="120px" background="#000000" />
-				</StackItem>
+				<Hr width="3px" height="120px" background="#000000" margin="-70px 0px -120px 0px" />
 				<StackItem width="100%">
 					<Override
 						slot="StackItemContent"
@@ -560,6 +560,8 @@ export default (() => {
 								box-shadow="6px 6px 10px -1px rgba(0, 0, 0, 0.12)"
 								hover-box-shadow="6px 6px 20px -1px rgba(0, 0, 0, 0.12)"
 								hover-font="normal 400 15px/1.5 --fontFamily-sansHelvetica"
+								hover-transform="scale(105%)"
+								hover-transition="all --transitionDuration-fast ease 0s"
 							>
 								Заказать разработку
 							</Button>
@@ -582,6 +584,8 @@ export default (() => {
 						box-shadow="6px 6px 10px -1px rgba(0, 0, 0, 0.12)"
 						sm-width="80%"
 						sm-margin="30px 0px 0px 0px"
+						hover-transform="scale(110%)"
+						hover-transition="all --transitionDuration-fast ease 0s"
 					>
 						<Override
 							slot="StackItemContent"
@@ -595,16 +599,13 @@ export default (() => {
 							text-align="center"
 							text-transform="uppercase"
 							hover-color="#ff7b00"
-							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
 							Вы заполняете анкету и оставляете заявку
 						</Text>
 					</StackItem>
 				</StackItem>
-				<StackItem width="100%" margin="-120px 5px -120px 0px" lg-display="none">
-					<Hr width="3px" height="160px" background="#000000" />
-				</StackItem>
+				<Hr width="3px" height="160px" background="#000000" margin="-120px 0px -120px 0px" />
 				<StackItem width="100%">
 					<Override
 						slot="StackItemContent"
@@ -622,6 +623,8 @@ export default (() => {
 						box-shadow="6px 6px 10px -1px rgba(0, 0, 0, 0.12)"
 						sm-margin="30px 0px 0px 0px"
 						sm-width="80%"
+						hover-transform="scale(105%)"
+						hover-transition="all --transitionDuration-fast ease 0s"
 					>
 						<Override
 							slot="StackItemContent"
@@ -635,7 +638,6 @@ export default (() => {
 							text-align="center"
 							text-transform="uppercase"
 							hover-color="#ff7b00"
-							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
 							Мы связываемся с вами и обговариваем детали
@@ -673,9 +675,7 @@ export default (() => {
 						</Text>
 					</StackItem>
 				</StackItem>
-				<StackItem width="100%" margin="-120px 5px -120px 0px" lg-display="none">
-					<Hr width="3px" height="140px" background="#000000" />
-				</StackItem>
+				<Hr width="3px" height="140px" background="#000000" margin="-120px 0 -120px 0" />
 				<StackItem width="100%">
 					<Override
 						slot="StackItemContent"
@@ -724,6 +724,8 @@ export default (() => {
 						box-shadow="6px 6px 10px -1px rgba(0, 0, 0, 0.12)"
 						sm-width="80%"
 						sm-margin="30px 0px 0px 0px"
+						hover-transform="scale(105%)"
+						hover-transition="all --transitionDuration-fast ease 0s"
 					>
 						<Override
 							slot="StackItemContent"
@@ -737,16 +739,13 @@ export default (() => {
 							text-align="center"
 							text-transform="uppercase"
 							hover-color="#ff7b00"
-							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
 							Приступаем к разработке макета
 						</Text>
 					</StackItem>
 				</StackItem>
-				<StackItem width="100%" margin="-105px 5px -70px 0px" lg-display="none">
-					<Hr width="3px" height="110px" background="#000000" />
-				</StackItem>
+				<Hr width="3px" height="110px" background="#000000" margin="-105px 0px -70px 0px" />
 				<StackItem width="100%">
 					<Override
 						slot="StackItemContent"
@@ -764,6 +763,8 @@ export default (() => {
 						box-shadow="6px 6px 10px -1px rgba(0, 0, 0, 0.12)"
 						sm-margin="30px 0px 0px 0px"
 						sm-width="80%"
+						hover-transform="scale(105%)"
+						hover-transition="all --transitionDuration-fast ease 0s"
 					>
 						<Override
 							slot="StackItemContent"
@@ -777,7 +778,6 @@ export default (() => {
 							text-align="center"
 							text-transform="uppercase"
 							hover-color="#ff7b00"
-							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
 							Получаем предоплату
@@ -812,9 +812,7 @@ export default (() => {
 						</Text>
 					</StackItem>
 				</StackItem>
-				<StackItem width="100%" margin="-90px 5px -120px 0px" lg-display="none">
-					<Hr width="3px" height="105px" background="#000000" />
-				</StackItem>
+				<Hr width="3px" height="105px" background="#000000" margin="-90px 0px -120px 0px" />
 				<StackItem width="100%">
 					<Override
 						slot="StackItemContent"
@@ -862,6 +860,8 @@ export default (() => {
 						box-shadow="6px 6px 10px -1px rgba(0, 0, 0, 0.12)"
 						sm-margin="30px 0px 0px 0px"
 						sm-width="80%"
+						hover-transform="scale(105%)"
+						hover-transition="all --transitionDuration-fast ease 0s"
 					>
 						<Override
 							slot="StackItemContent"
@@ -875,16 +875,13 @@ export default (() => {
 							text-align="center"
 							text-transform="uppercase"
 							hover-color="#ff7b00"
-							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
 							Финальный этап разработки
 						</Text>
 					</StackItem>
 				</StackItem>
-				<StackItem width="100%" margin="-120px 5px -120px 0px" lg-display="none">
-					<Hr width="3px" height="120px" background="#000000" />
-				</StackItem>
+				<Hr width="3px" height="120px" background="#000000" margin="-120px 0px -120px 0px" />
 				<StackItem width="100%">
 					<Override
 						slot="StackItemContent"
@@ -902,6 +899,8 @@ export default (() => {
 						box-shadow="6px 6px 10px -1px rgba(0, 0, 0, 0.12)"
 						sm-width="80%"
 						sm-margin="30px 0px 0px 0px"
+						hover-transform="scale(105%)"
+						hover-transition="all --transitionDuration-fast ease 0s"
 					>
 						<Override
 							slot="StackItemContent"
@@ -915,7 +914,6 @@ export default (() => {
 							text-align="center"
 							text-transform="uppercase"
 							hover-color="#ff7b00"
-							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
 							Прием заказа и передача сайта под Ваше управление
@@ -952,9 +950,7 @@ export default (() => {
 						</Text>
 					</StackItem>
 				</StackItem>
-				<StackItem width="100%" margin="-120px 5px -120px 0px" lg-display="none">
-					<Hr width="3px" height="120px" background="#000000" />
-				</StackItem>
+				<Hr width="3px" height="120px" background="#000000" margin="-120px 0px -120px 0px" />
 				<StackItem width="100%">
 					<Override
 						slot="StackItemContent"
@@ -996,6 +992,8 @@ export default (() => {
 								box-shadow="6px 6px 10px -1px rgba(0, 0, 0, 0.12)"
 								hover-box-shadow="6px 6px 20px -1px rgba(0, 0, 0, 0.12)"
 								hover-font="normal 400 15px/1.5 --fontFamily-sansHelvetica"
+								hover-transform="scale(105%)"
+								hover-transition="all --transitionDuration-fast ease 0s"
 							>
 								Заказать разработку
 							</Button>
@@ -1018,6 +1016,8 @@ export default (() => {
 						box-shadow="6px 6px 10px -1px rgba(0, 0, 0, 0.12)"
 						sm-width="80%"
 						sm-margin="30px 0px 0px 0px"
+						hover-transform="scale(105%)"
+						hover-transition="all --transitionDuration-fast ease 0s"
 					>
 						<Override
 							slot="StackItemContent"
@@ -1031,7 +1031,6 @@ export default (() => {
 							text-align="center"
 							text-transform="uppercase"
 							hover-color="#ff7b00"
-							hover-font="normal 400 26px/1.5 --fontFamily-sansHelvetica"
 							width="95%"
 						>
 							Вы оплачиваете и оставляете отзыв (по желанию)

@@ -661,6 +661,8 @@ export default (() => {
 							border-color="#524f4e"
 							border-width="1px"
 							border-style="solid"
+							hover-transition="all --transitionDuration-fast ease 0s"
+							hover-transform="translateY(-5px)"
 						>
 							посмотреть работу
 						</Button>
